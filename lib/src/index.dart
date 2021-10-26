@@ -10,7 +10,7 @@ class AppIndex extends StatelessWidget {
         title: 'Material App',
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Material App Bar'),
+            title: Text('Material'),
           ),
           body: Center(
             child: Container(
