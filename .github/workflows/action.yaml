@@ -28,7 +28,7 @@ jobs:
       - run: flutter clean
       - run: flutter build apk --release -t lib/main.dev.dart --flavor dev
       - run: flutter build appbundle --release -t lib/main.dev.dart --flavor dev
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2
         with:
           name: apk-dev-release
           path: |
