@@ -30,10 +30,12 @@ jobs:
       - run: flutter build appbundle --release -t lib/main.dev.dart --flavor dev
       - uses: actions/upload-artifact@v2
         with:
-          name: apk-dev-release
+#          name: apk-dev-release
           path: |
-            build/app/outputs/flutter-apk/app-dev-release.apk
-            build/app/outputs/bundle/devRelease/app-dev-release.aab
+            apk-dev-release: build/app/outputs/flutter-apk/app-dev-release.apk
+            aab-dev-release: build/app/outputs/bundle/devRelease/app-dev-release.aab
+#            build/app/outputs/flutter-apk/app-dev-release.apk
+#            build/app/outputs/bundle/devRelease/app-dev-release.aab
 
   deployStaging:
     name: 'Deploy to staging environment'
