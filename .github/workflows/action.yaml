@@ -31,11 +31,10 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           title: flutter_sample_env
-            - files: build/app/outputs/flutter-apk/app-dev-release.apk
             - name: "apk-dev-release"
               files: build/app/outputs/flutter-apk/app-dev-release.apk
-            - name: "aab-dev-release"
-              files: build/app/outputs/bundle/devRelease/app-dev-release.aab
+                - name: "aab-dev-release"
+                  files: build/app/outputs/bundle/devRelease/app-dev-release.aab
 #          path: |
 #            - []
 #            apk-dev-release: build/app/outputs/flutter-apk/app-dev-release.apk
