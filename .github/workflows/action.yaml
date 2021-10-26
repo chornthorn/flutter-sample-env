@@ -30,11 +30,12 @@ jobs:
       - run: flutter build appbundle --release -t lib/main.dev.dart --flavor dev
       - uses: actions/upload-artifact@v2
         with:
-          title: flutter_sample_env
-            - name: "apk-dev-release"
-              files: [build/app/outputs/flutter-apk/app-dev-release.apk]
-#                - name: "aab-dev-release"
-#                  files: build/app/outputs/bundle/devRelease/app-dev-release.aab
+          name: apk-dev-release
+          path: build/app/outputs/flutter-apk/app-dev-release.apk
+      - uses: actions/upload-artifact@v2
+        with:
+          name: aab-dev-release
+          path: build/app/outputs/bundle/devRelease/app-dev-release.aab
 #          path: |
 #            - []
 #            apk-dev-release: build/app/outputs/flutter-apk/app-dev-release.apk
