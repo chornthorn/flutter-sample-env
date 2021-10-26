@@ -33,8 +33,8 @@ jobs:
           title: flutter_sample_env
             - name: "apk-dev-release"
               files: build/app/outputs/flutter-apk/app-dev-release.apk
-                - name: "aab-dev-release"
-                  files: build/app/outputs/bundle/devRelease/app-dev-release.aab
+#                - name: "aab-dev-release"
+#                  files: build/app/outputs/bundle/devRelease/app-dev-release.aab
 #          path: |
 #            - []
 #            apk-dev-release: build/app/outputs/flutter-apk/app-dev-release.apk
