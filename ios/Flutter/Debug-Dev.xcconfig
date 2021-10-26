@@ -1,0 +1,14 @@
+//
+//  Debug-Dev.xcconfig
+//  Runner
+//
+//  Created by Thorn Chorn on 30/6/21.
+//
+
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-dev.xcconfig"
+#include "Generated.xcconfig"
+
+COCOAPODS_PARALLEL_CODE_SIGN=true
+FLUTTER_TARGET=lib/main.dev.dart
+FLUTTER_BUILD_DIR=build
+SYMROOT=${SOURCE_ROOT}/../build/ios

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>617943790400-ig6df9l7c1p00f912ka7jg1l27hckgnp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.617943790400-ig6df9l7c1p00f912ka7jg1l27hckgnp</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>617943790400-130psgd6gnqgjeg0gftq2e4q2h8mqmer.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCVWYbRwXw-kGZhL4IrAym3V8iLHTY3_oM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>617943790400</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.instict.OneSala.elearning.dev</string>
+	<key>PROJECT_ID</key>
+	<string>amnaan-e-learning</string>
+	<key>STORAGE_BUCKET</key>
+	<string>amnaan-e-learning.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:617943790400:ios:a045043576fa2884f6c0a5</string>
+	<key>DATABASE_URL</key>
+	<string>https://amnaan-e-learning.firebaseio.com</string>
+</dict>
+</plist>
