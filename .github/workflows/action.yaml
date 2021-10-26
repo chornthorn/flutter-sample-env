@@ -31,7 +31,9 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: apk-dev-release
-          path: build/app/outputs/flutter-apk/app-dev-release.apk
+          path: |
+            build/app/outputs/flutter-apk/app-dev-release.apk
+            build/app/outputs/bundle/devRelease/app-dev-release.aab
 
   deployStaging:
     name: 'Deploy to staging environment'
@@ -55,11 +57,12 @@ jobs:
           flutter-version: '2.5.x'
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build apk
+      - run: flutter build apk --release -t lib/main.staging.dart --flavor staging
+      - run: flutter build appbundle --release -t lib/main.staging.dart --flavor staging
       - uses: actions/upload-artifact@v1
         with:
-          name: apk-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: apk-staging-release
+          path: build/app/outputs/flutter-apk/app-staging-release.apk
 
   deployProd:
     name: 'Deploy to production environment'
@@ -83,8 +86,9 @@ jobs:
           flutter-version: '2.5.x'
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build apk
+      - run: flutter build apk --release -t lib/main.dart --flavor prod
+      - run: flutter build appbundle --release -t lib/main.dart --flavor prod
       - uses: actions/upload-artifact@v1
         with:
-          name: apk-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: apk-prod-release
+          path: build/app/outputs/flutter-apk/app-prod-release.apk
