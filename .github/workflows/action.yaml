@@ -26,7 +26,8 @@ jobs:
           flutter-version: '2.5.x'
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build apk --release -t lib/main_dev.dart --flavor dev
+      - run: flutter build apk -t lib/main_dev.dart --flavor dev
+      - run: flutter build appbundle -t lib/main_dev.dart --flavor dev
       - uses: actions/upload-artifact@v1
         with:
           name: apk-release
